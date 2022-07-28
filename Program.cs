@@ -1,4 +1,4 @@
-﻿string[] CreateArray(int size)
+string[] CreateArray(int size)
 {
     return new string[size];
 }
@@ -11,6 +11,17 @@ void Fill(string[] array)
             Console.Write($"Input {i + 1} string: ");
             array[i] = Console.ReadLine();
     }
+}
+
+int CountOfElements(string[] array)
+{
+    int len = array.Length;
+    int count = 0;
+    for (int i = 0; i < len; i++)
+    {
+        if (array[i].Length <= 3) count++;
+    }
+    return count;
 }
 
 string[] ArrayOfElementsUpTo3Char(string[] array, int count)
