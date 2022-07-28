@@ -51,3 +51,15 @@ string Print(string[] array)
     }
     return output;
 }
+
+int size = 4; // зададим произвольный размер массива для проверки работы программы.
+              // В случае необходимости можно добавить пользовательский ввод
+string[] myArray = CreateArray(size);
+Fill(myArray);
+string input = Print(myArray);
+Console.WriteLine($"input: {input}");
+
+int count = CountOfElements(myArray);
+string[] resultArray = ArrayOfElementsUpTo3Char(myArray, count);
+string output = Print(resultArray);
+Console.WriteLine($"output: {output}");
