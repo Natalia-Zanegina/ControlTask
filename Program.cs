@@ -1,4 +1,4 @@
-string[] CreateArray(int size)
+﻿string[] CreateArray(int size)
 {
     return new string[size];
 }
@@ -39,4 +39,15 @@ string[] ArrayOfElementsUpTo3Char(string[] array, int count)
         }
     }
     return newArray;
+}
+
+string Print(string[] array)
+{
+    int length = array.Length;
+    string output = String.Empty;
+    for (int i = 0; i < length; i++)
+    {
+        output += ($"\"{array[i]}\" ");
+    }
+    return output;
 }
