@@ -6,7 +6,7 @@
 
 ## Ход решения:
 1. Создана блок-схема решения __*основной*__ задачи:
-![block_diagram](block_diagram.drawio.png)
+![block_diagram](blockDiagram.drawio.png)
 
 2. Написан метод, создающий массив строк: string[ ] __CreateArray__. Метод принимает на вход количество элементов массива. 
 
