@@ -12,3 +12,14 @@ void Fill(string[] array)
             array[i] = Console.ReadLine();
     }
 }
+
+int CountOfElements(string[] array)
+{
+    int len = array.Length;
+    int count = 0;
+    for (int i = 0; i < len; i++)
+    {
+        if (array[i].Length <= 3) count++;
+    }
+    return count;
+}
